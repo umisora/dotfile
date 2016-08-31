@@ -2,10 +2,6 @@
 # .bashrc 
 #
 
-# プロンプトにマシン名(\h)とカレントのフルパス(\w)を表示
-#
-#PS1="\[[\u@\h \W]\\$ \]"
-
 # grep -----------------------------------------------------------
 # GREP_COLORは、検索ワードを色づけするために使用。
 # 色づけすると、視認性が格段にあがる。
@@ -23,9 +19,9 @@ alias ls='ls -G'
 # Git
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
-
 alias git='hub'
 
-# Terminal
+# プロンプトの表示を変更
 GIT_PS1_SHOWDIRTYSTATE=true
 PS1='\[\033[97m\]\u\[\033[00m\]:\[\033[36m\]\w\[\033[35m\]$(__git_ps1)\[\033[00m\]\$ '
+
