@@ -16,3 +16,12 @@ AppStoreから手動でインストールする。
 6. Macの初期設定
 ・Mac>システム環境設定>キーボード
 　　キーボード>　F1,F2などのすべてのキーを標準のファンクションキーとして使用を有効にする
+
+7. MacApplication
+
+8. Custom Application Inastall Download
+RDP
+https://www.microsoft.com/ja-jp/download/details.aspx?id=18140
+
+Google Japanese IME
+https://www.google.co.jp/ime/
