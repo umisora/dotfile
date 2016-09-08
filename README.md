@@ -25,3 +25,12 @@ https://www.microsoft.com/ja-jp/download/details.aspx?id=18140
 
 Google Japanese IME
 https://www.google.co.jp/ime/
+・インストール後、再ログイン
+・Mac>システム環境設定>キーボード
+    入力ソース> デフォルのIMEを`-`で消す。
+
+Alfred
+・AppStoreからInstall
+・Mac>システム環境設定>キーボード
+  ショートカット> Spotlight 
+  ・Spotlight検索とFinderの検索ウインドウの表示ショートカットをOFF
