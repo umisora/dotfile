@@ -34,3 +34,7 @@ Alfred
 ・Mac>システム環境設定>キーボード
   ショートカット> Spotlight 
   ・Spotlight検索とFinderの検索ウインドウの表示ショートカットをOFF
+
+Mac Vim
+https://github.com/splhack/macvim-kaoriya
+
