@@ -50,9 +50,9 @@ set showmatch
 "新しい行を作った時に高度な自動インデントを行う
 set smarttab
 "自動で挿入されるインデントのスペース幅
-set shiftwidth=4
+set shiftwidth=2
 "tab キーを押した時に挿入されるスペース量
-set softtabstop=4
+set softtabstop=2
 " grep検索を設定する
 set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
 set grepprg=grep\ -nh
