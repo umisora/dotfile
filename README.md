@@ -38,3 +38,9 @@ Alfred
 Mac Vim
 https://github.com/splhack/macvim-kaoriya
 
+9. tunnelblickのインストール (VPN)
+Stable Version
+https://tunnelblick.net/downloads.html
+
+10. iCloud Account Or Apple Accountの統合
+カレンダー / メール / リマインダー 連携
