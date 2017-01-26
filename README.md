@@ -33,13 +33,13 @@ AppStoreから手動でインストールする。
   ・スマート引用符とスマートダッシュを使用をOFF
 
 1. MacApplicationのインストール
-* [Google Japanese IME](https://www.google.co.jp/ime/)
-  ・インストール後、再ログイン
-  ・Mac>システム環境設定>キーボード
-    入力ソース> デフォルのIMEを`-`で消す。
-* [tunnelblickのインストール (VPN)](https://tunnelblick.net/downloads.html)
-* [quiver](http://happenapps.com/#quiver)
-* AppStore履歴から入れたほうがいいやつをInstall
+  * [Google Japanese IME](https://www.google.co.jp/ime/)
+    ・インストール後、再ログイン
+    ・Mac>システム環境設定>キーボード
+      入力ソース> デフォルのIMEを`-`で消す。
+  * [tunnelblickのインストール (VPN)](https://tunnelblick.net/downloads.html)
+  * [quiver](http://happenapps.com/#quiver)
+  * AppStore履歴から入れたほうがいいやつをInstall
 
 1. iCloud Account Or Apple Accountの統合
 カレンダー / メール / リマインダー 連携
