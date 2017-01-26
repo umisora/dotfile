@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
         \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
   "Thema
   Plug 'w0ng/vim-hybrid'
+  Plug 'altercation/vim-colors-solarized' 
   "Markdown
   Plug 'plasticboy/vim-markdown'
   Plug 'kannokanno/previm'
@@ -70,4 +71,8 @@ nnoremap <silent> <C-p> :PrevimOpen<CR> " Ctrl-pでプレビュー
 " 自動で折りたたまないようにする
 let g:vim_markdown_folding_disabled=1
 
-
+" Enable Thema
+syntax enable
+set background=dark
+colorscheme solarized
+" let g:solarized_termcolors=256

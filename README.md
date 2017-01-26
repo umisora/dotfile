@@ -2,45 +2,44 @@
 1. Install Xcode
 AppStoreから手動でインストールする。
 
-2. dotfileリポジトリをgit cloneしてくる。
-・git clone 実行するといくつかヒアリングがあったはず。
+1. dotfileリポジトリをgit cloneしてくる。
+・`cd ~/.ssh && ssh-keygen -t rsa`
+・id_rsa_git的な名前で作る
+・id_rsa_git.pubをGithubに登録する
+・`cd ~/ && mkdir workspace && git clone git@github.com:umisora/dotfile.git`
 
-3. setup_dotfile.shを実行する
-・bashrcとかdotfileがセットされる
-4. install.shを実行する
-・ HomeBrewがインストールされる
+1. Mac Terminal Setting
+   Mac Terminal.app のカラー設定をThema ImportでSolarized にする
 
-5. brew bundle を実行する
-・Brewfileの中身がInstallされる
+1. Docker For MacをInstallする
+   [Docker For Mac](https://docs.docker.com/docker-for-mac/)
 
-6. Macの初期設定
+1. Setup Scripts
+・setup_dotfiles.shを実行する
+・install.shを実行する
+・`brew bundle` を実行する
+
+1. Macの初期設定
 ・Mac>システム環境設定>キーボード
 　　キーボード>　F1,F2などのすべてのキーを標準のファンクションキーとして使用を有効にする
 
-7. MacApplication
-
-8. Custom Application Inastall Download
-RDP
-https://www.microsoft.com/ja-jp/download/details.aspx?id=18140
-
-Google Japanese IME
-https://www.google.co.jp/ime/
-・インストール後、再ログイン
-・Mac>システム環境設定>キーボード
-    入力ソース> デフォルのIMEを`-`で消す。
-
-Alfred
-・AppStoreからInstall
+1. Mac System Setting
 ・Mac>システム環境設定>キーボード
   ショートカット> Spotlight 
   ・Spotlight検索とFinderの検索ウインドウの表示ショートカットをOFF
+  ユーザー辞書
+  ・英入力中にスペルを自動変換をOFF
+  ・文頭を自動で大文字をOFF
+  ・スマート引用符とスマートダッシュを使用をOFF
 
-Mac Vim
-https://github.com/splhack/macvim-kaoriya
+1. MacApplicationのインストール
+* [Google Japanese IME](https://www.google.co.jp/ime/)
+  ・インストール後、再ログイン
+  ・Mac>システム環境設定>キーボード
+    入力ソース> デフォルのIMEを`-`で消す。
+* [tunnelblickのインストール (VPN)](https://tunnelblick.net/downloads.html)
+* [quiver](http://happenapps.com/#quiver)
+* AppStore履歴から入れたほうがいいやつをInstall
 
-9. tunnelblickのインストール (VPN)
-Stable Version
-https://tunnelblick.net/downloads.html
-
-10. iCloud Account Or Apple Accountの統合
+1. iCloud Account Or Apple Accountの統合
 カレンダー / メール / リマインダー 連携

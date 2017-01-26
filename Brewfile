@@ -1,4 +1,5 @@
 brew 'git'
+brew 'vim', args: ['with-lua', 'HEAD']
 brew 'hub'
 brew 'wget'
 brew 'nmap'
@@ -10,3 +11,5 @@ brew 'terraform'
 brew 'jq'
 brew 'awscli'
 brew 'heroku-toolbelt'
+brew 'tmux'
+brew 'coreutils'
