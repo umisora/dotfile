@@ -37,11 +37,7 @@ fi
 
 # プロンプトの表示を変更
 GIT_PS1_SHOWDIRTYSTATE=true
-PS1='\[\033[97m\]\u\[\033[00m\]:\[\033[36m\]\w\[\033[35m\]$(__git_ps1)\[\033[00m\]\$ '
-
-# VimをVim Kaoriyaへ
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env_LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+export PS1='\h\[\033[00m\]:\W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\$ '
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
