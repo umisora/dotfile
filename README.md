@@ -6,7 +6,7 @@ AppStoreから手動でインストールする。
 ・`cd ~/.ssh && ssh-keygen -t rsa`
 ・id_rsa_git的な名前で作る
 ・id_rsa_git.pubをGithubに登録する
-・`cd ~/ && mkdir workspace && git clone git@github.com:umisora/dotfile.git`
+・`cd ~/ && mkdir workspace && git clone git@github.com:umisora/dotfile.git --recursive`
 
 1. Mac Terminal Setting
    Mac Terminal.app のカラー設定をThema ImportでSolarized にする

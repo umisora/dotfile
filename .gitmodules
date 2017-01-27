@@ -1,0 +1,6 @@
+[submodule "themas/dircolors-solarized"]
+	path = themas/dircolors-solarized
+	url = git@github.com:seebi/dircolors-solarized.git
+[submodule "themas/solarized"]
+	path = themas/solarized
+	url = git@github.com:tomislav/osx-terminal.app-colors-solarized
