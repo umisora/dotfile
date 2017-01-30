@@ -3,6 +3,7 @@ basedir=$(cd $(dirname $0) && pwd)
 
 # Commit Template
 ln -fns ${basedir}/commit_template.txt ~/.commit_template
+ln -fns ${basedir}/bash_profile ~/.bash_profile
 ln -fns ${basedir}/bashrc ~/.bashrc
 ln -fns ${basedir}/vim ~/.vim
 ln -fns ${basedir}/vimrc ~/.vimrc
