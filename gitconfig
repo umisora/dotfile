@@ -1,0 +1,12 @@
+[commit]
+	template = /Users/murakami.katsutoshi/.commit_template
+[user]
+	name = umisora
+	email = murakami.katsutoshi@moneyforward.co.jp
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+[alias]
+	st = status
+	co = checkout
+	br = browse
+	pr = pull-request

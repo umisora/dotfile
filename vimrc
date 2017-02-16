@@ -1,3 +1,6 @@
+"
+" Plugin追加したら :PlugInstall を実行
+"
 "--------------------
 " Plugin Install
 "--------------------
@@ -21,7 +24,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'plasticboy/vim-markdown'
   Plug 'kannokanno/previm'
   Plug 'tyru/open-browser.vim'
+  Plug 'hashivim/vim-terraform'  " vim-terraform
 call plug#end()
+ 
 
 "--------------------
 " 基本的な設定
@@ -84,3 +89,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 " let g:solarized_termcolors=256
+
+" terraform formatter on 
+let g:terraform_fmt_on_save = 1  
