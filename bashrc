@@ -41,4 +41,5 @@ export PS1='\W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\$ '
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
+eval "$(direnv hook bash)"
+export EDITOR=vim

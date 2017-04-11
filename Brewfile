@@ -5,8 +5,10 @@ tap 'caskroom/cask'
 brew 'git'
 brew 'vim', args: ['with-lua', 'HEAD']
 brew 'bash-completion'
+brew 'direnv'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
+
 
 # 便利コマンド 
 brew 'hub'

@@ -11,6 +11,8 @@ ln -fns ${basedir}/gvimrc ~/.gvimrc
 ln -fns ${basedir}/tmux.conf ~/.tmux.conf
 ln -fns ${basedir}/themas/dircolors-solarized ~/.dircolors-solarized 
 ln -fns ${basedir}/gitconfig ~/.gitconfig
+ln -fns ${basedir}/bundle.config ~/.bundle/config
+
 mkdir -p  ~/.vim/colors/
 ln -fns ${basedir}/themas/vimcolor/solarized.vim ~/.vim/colors/
 
