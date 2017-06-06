@@ -54,5 +54,8 @@ AppStoreから手動でインストールする。
    #### インテグレーション
    * Dash ⇔ Alfred
    * スニペット/辞書機能
-   * Alfred ⇔ lastpass (未設定だけどやりたい)
+   * Alfred ⇔ Github
+   * Alfred ⇔ Chrome BookMarks 
    * Alfred ⇔ 1password (未設定だけどやりたい)
+   * Alfred ⇔ lastpass (未設定だけどやりたい)
+   
