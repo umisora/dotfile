@@ -39,7 +39,19 @@ AppStoreから手動でインストールする。
       入力ソース> デフォルのIMEを`-`で消す。
   * [tunnelblickのインストール (VPN)](https://tunnelblick.net/downloads.html)
   * [quiver](http://happenapps.com/#quiver)
+  * [Dash](https://kapeli.com/dash)  
   * AppStore履歴から入れたほうがいいやつをInstall
 
 1. iCloud Account Or Apple Accountの統合
-カレンダー / メール / リマインダー 連携
+   カレンダー / メール / リマインダー 連携
+
+1. その他インテグレーション
+   ### Alfred (課金済)  
+   https://www.alfredapp.com/
+   課金していれば設定をバックアップできるのでそれでリカバリすればどこでも使える。幸せ
+
+   #### インテグレーション
+   * Dash ⇔ Alfred
+   * スニペット/辞書機能
+   * Alfred ⇔ lastpass (未設定だけどやりたい)
+   * Alfred ⇔ 1password (未設定だけどやりたい)
