@@ -8,6 +8,15 @@
 	br = browse
 	pr = pull-request
 	tree = log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
+        vimdiff = difftool
 [user]
-	name = umisora
-	email = bit72s_akm@hotmail.com
+        name = umisora
+        email = bit72s_akm@hotmail.com
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false
+[merge]
+        tool = vimdiff
+[mergetool]
+        prompt = false

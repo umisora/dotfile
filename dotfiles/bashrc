@@ -39,7 +39,7 @@ fi
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\$ '
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/usr/local/bin/:$PATH"
 eval "$(rbenv init -)"
 eval "$(direnv hook bash)"
 export EDITOR=vim

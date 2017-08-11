@@ -15,8 +15,7 @@ AppStoreから手動でインストールする。
    [Docker For Mac](https://docs.docker.com/docker-for-mac/)
 
 1. Setup Scripts
-・setup_dotfiles.shを実行する
-・install.shを実行する
+・setup.shを実行する
 ・`brew bundle` を実行する
 
 1. Macの初期設定
@@ -40,6 +39,7 @@ AppStoreから手動でインストールする。
   * [tunnelblickのインストール (VPN)](https://tunnelblick.net/downloads.html)
   * [quiver](http://happenapps.com/#quiver)
   * [Dash](https://kapeli.com/dash)  
+  * [Jasper](https://jasperapp.io/)  
   * AppStore履歴から入れたほうがいいやつをInstall
 
 1. iCloud Account Or Apple Accountの統合
