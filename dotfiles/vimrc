@@ -25,7 +25,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'kannokanno/previm'
   Plug 'tyru/open-browser.vim'
   Plug 'hashivim/vim-terraform'  " vim-terraform
+  Plug 'chase/vim-ansible-yaml'  " vim-yaml
   Plug 'stephpy/vim-yaml'        " vim-yaml
+  Plug 'scrooloose/nerdtree'     " Dir Tree `:NERDTreeToggle` https://kamiya555.github.io/2015/10/14/nerdtree-command/
+  Plug 'tpope/vim-commentary'    " Range CommentOut V, Select, gc
 call plug#end()
  
 
@@ -80,6 +83,10 @@ set backspace=indent,eol,start
 " 拡張子に合わせてfiletypeを変更する
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
+autocmd BufRead,BufNewFile *.rb setlocal filetype=ruby tabstop=2 softtabstop=2 shiftwidth=2
+autocmd BufRead,BufNewFile *.py setlocal filetype=python tabstop=4 softtabstop=4 shiftwidth=4
+autocmd BufRead,BufNewFile *.yaml setlocal filetype=ansible 
+autocmd BufRead,BufNewFile *.yml setlocal filetype=yaml
 " Need: kannokanno/previm
 nnoremap <silent> <C-p> :PrevimOpen<CR> " Ctrl-pでプレビュー
 " 自動で折りたたまないようにする
@@ -92,4 +99,7 @@ colorscheme solarized
 " let g:solarized_termcolors=256
 
 " terraform formatter on 
-let g:terraform_fmt_on_save = 1  
+let g:terraform_fmt_on_save = 1
+
+" yaml formatter on
+let g:ansible_options = {'ignore_blank_lines': 0}
