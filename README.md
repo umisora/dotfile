@@ -58,4 +58,6 @@ AppStoreから手動でインストールする。
    * Alfred ⇔ Chrome BookMarks 
    * Alfred ⇔ 1password (未設定だけどやりたい)
    * Alfred ⇔ lastpass (未設定だけどやりたい)
-   
+
+ 1. Vim Plugin Install
+   * Vimを開いて `:PlugInstall`

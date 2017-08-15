@@ -25,6 +25,8 @@ brew 'mysql'
 
 # ツール
 brew 'terraform'
+brew 'ansible'
+brew 'ansible-lint'
 brew 'jq'
 brew 'awscli'
 brew 'heroku-toolbelt'

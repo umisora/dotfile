@@ -25,6 +25,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'kannokanno/previm'
   Plug 'tyru/open-browser.vim'
   Plug 'hashivim/vim-terraform'  " vim-terraform
+  Plug 'stephpy/vim-yaml'        " vim-yaml
 call plug#end()
  
 
