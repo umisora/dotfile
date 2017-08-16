@@ -9,6 +9,7 @@ brew 'direnv'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
 
+# PackageManager
 
 # 便利コマンド 
 brew 'hub'
@@ -19,6 +20,7 @@ brew 'nmap'
 brew 'ruby-build'
 brew 'rbenv'
 cask 'java'
+brew 'python' # with Pip
 
 # ミドルウェア
 brew 'mysql'
