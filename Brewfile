@@ -26,11 +26,17 @@ brew 'python' # with Pip
 brew 'mysql'
 
 # ツール
-brew 'terraform'
+#brew 'terraform'
+brew 'tfenv'
 brew 'ansible'
 brew 'ansible-lint'
+brew 'packer'
 brew 'jq'
 brew 'awscli'
 brew 'heroku-toolbelt'
 brew 'coreutils'
 
+# Docker / k8s
+brew 'kubectl'
+cask 'minikube'
+cask 'virtualbox'

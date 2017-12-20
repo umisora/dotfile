@@ -37,3 +37,8 @@ echo setup modules
 sh installs/homebrew_install.sh
 sh installs/ruby_install.sh
 sh installs/digdag_install.sh
+
+if [ ! `which gcloud` ]; then
+  echo Install gcloud command
+  curl https://sdk.cloud.google.com | bash
+fi

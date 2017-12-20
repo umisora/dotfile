@@ -30,12 +30,18 @@ call plug#begin('~/.vim/plugged')
   Plug 'scrooloose/nerdtree'     " Dir Tree `:NERDTreeToggle` https://kamiya555.github.io/2015/10/14/nerdtree-command/
   Plug 'tpope/vim-commentary'    " Range CommentOut V, Select, gc
   Plug 'scrooloose/syntastic' " SyntaxChecker 
+  Plug 'ekalinin/Dockerfile.vim' " Docker & DockerCompose Syntax
 call plug#end()
  
 
 "--------------------
 " 基本的な設定
 "--------------------
+"エンコーディング
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+"改行コード自動判別
+set fileformats=unix,dos,mac
 "新しい行のインデントを現在行と同じにする
 set autoindent 
 "バックアップファイルのディレクトリを指定する
@@ -78,9 +84,6 @@ set whichwrap=b,s,h,l,<,>,[,]
 " start   : 挿入モード開始位置より手前の文字
 set backspace=indent,eol,start
 
-"--------------------
-" markdown
-"--------------------
 " 拡張子に合わせてfiletypeを変更する
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
@@ -88,30 +91,57 @@ autocmd BufRead,BufNewFile *.rb setlocal filetype=ruby tabstop=2 softtabstop=2 s
 autocmd BufRead,BufNewFile *.py setlocal filetype=python tabstop=4 softtabstop=4 shiftwidth=4
 autocmd BufRead,BufNewFile *.yaml setlocal filetype=ansible 
 autocmd BufRead,BufNewFile *.yml setlocal filetype=yaml
+
+"--------------------
+" markdown
+"--------------------
 " Need: kannokanno/previm
 nnoremap <silent> <C-p> :PrevimOpen<CR> " Ctrl-pでプレビュー
 " 自動で折りたたまないようにする
 let g:vim_markdown_folding_disabled=1
 
+"--------------------
 " Syntastic Setting
+"--------------------
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_signs=1
+let g:syntastic_mode_map = {'mode': 'passive'}
+
+"--------------------
+" Syntack Chekers
+"--------------------
 let g:syntastic_yaml_checkers = ['yamllint']
 
+" バッファを編集したら即座に文法チェック
+" http://qiita.com/knsh14/items/20c6e1e7ea0c0681dafd
+augroup AutoSyntastic
+    autocmd!
+    autocmd InsertLeave,TextChanged,BufRead,BufNewFile,BufWritePost * call s:syntastic() 
+augroup END
+function! s:syntastic()
+    SyntasticCheck
+endfunction
 
+"--------------------
 " Enable Thema
+"--------------------
 syntax enable
 set background=dark
 colorscheme solarized
 " let g:solarized_termcolors=256
 
-" terraform formatter on 
+"--------------------
+" terraform formatter setting 
+"--------------------
 let g:terraform_fmt_on_save = 1
 
-" yaml formatter on
+"--------------------
+" ansible formatter setting
+"--------------------
 let g:ansible_options = {'ignore_blank_lines': 0}

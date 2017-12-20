@@ -30,6 +30,9 @@ source /usr/local/etc/bash_completion.d/docker-compose.bash-completion
 # Vim
 alias vi='vim'
 
+# Terraform
+alias tf='terraform'
+
 # bash-completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
@@ -39,7 +42,23 @@ fi
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\$ '
 
-export PATH="$HOME/.rbenv/bin:/usr/local/bin/:$PATH"
+export PATH="$HOME/.tfenv/bin:$HOME/.rbenv/bin:/usr/local/bin/:$PATH"
 eval "$(rbenv init -)"
 eval "$(direnv hook bash)"
 export EDITOR=vim
+
+complete -C /usr/local/Cellar/tfenv/0.5.2/versions/0.10.7/terraform terraform
+
+
+# Open tmux Default
+SESSION_NAME=ope
+if [[ -z "$TMUX" && -z "$STY" ]] && type tmux >/dev/null 2>&1; then
+  option=""
+  if tmux has-session -t ${SESSION_NAME}; then
+    option="attach -t ${SESSION_NAME}"
+  else
+    option="new -s ${SESSION_NAME}"
+  fi  
+  tmux $option && exit
+fi
+
