@@ -20,3 +20,5 @@
         tool = vimdiff
 [mergetool]
         prompt = false
+[fetch]
+	prune = true

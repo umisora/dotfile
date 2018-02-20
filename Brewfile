@@ -36,7 +36,3 @@ brew 'awscli'
 brew 'heroku-toolbelt'
 brew 'coreutils'
 
-# Docker / k8s
-brew 'kubectl'
-cask 'minikube'
-cask 'virtualbox'
