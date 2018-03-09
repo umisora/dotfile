@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+    <string>mac-info-notice</string>
+    <!--フルパスで指定-->
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Users/murakami.katsutoshi/workspace/dotfile/util/mac_info/ip_notice.sh</string>
+    </array>
+    <!-- launchctl loadしたタイミングで実行するか -->
+    <key>RunAtLoad</key>
+      <true/>
+  <key>StartCalendarInterval</key>
+    <dict>
+      <key>Minute</key>
+        <integer>00</integer>
+          <key>Hour</key>
+        <integer>18</integer>
+          <key>Weekday</key>
+        <integer>12345</integer>
+    </dict>
+</dict>
+</plist>

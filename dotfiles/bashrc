@@ -24,7 +24,6 @@ alias git='hub'
 
 # Docker
 source /usr/local/etc/bash_completion.d/docker.bash-completion
-source /usr/local/etc/bash_completion.d/docker-machine.bash-completion
 source /usr/local/etc/bash_completion.d/docker-compose.bash-completion
 
 # Vim
@@ -35,7 +34,7 @@ alias tf='terraform'
 
 # bash-completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
+     . `brew --prefix`/etc/bash_completion
 fi
 
 # プロンプトの表示を変更
