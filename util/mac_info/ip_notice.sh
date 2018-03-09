@@ -3,7 +3,7 @@
 ### Slack ###
 function slackMessageBasic()
 {
-    USERNAME=hostname
+    USERNAME=`hostname`
     TITLE="IP address is ... " 
     MESSAGE=$1
     COLOR="good"  # good,warning,denger
