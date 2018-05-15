@@ -36,6 +36,7 @@ alias tf='terraform'
 if [ -f `brew --prefix`/etc/bash_completion ]; then
      . `brew --prefix`/etc/bash_completion
 fi
+source <(kubectl completion zsh)
 
 # プロンプトの表示を変更
 GIT_PS1_SHOWDIRTYSTATE=true

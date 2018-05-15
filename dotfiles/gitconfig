@@ -11,6 +11,7 @@
         vimdiff = difftool
         rmbranches = "!f () { git branch --merged | egrep -v '\\*|develop|master|release' | xargs -n 1 git branch -d; };f"
         rmbrs = rmbranches
+        add-all = "!f () { git diff --name-only --diff-filter=M | xargs git add; };f"
 [user]
         name = umisora
         email = bit72s_akm@hotmail.com

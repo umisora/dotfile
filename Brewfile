@@ -1,5 +1,6 @@
 # リポジトリ
 tap 'caskroom/cask'
+tap 'homebrew/php'
 
 # 必須ツール
 brew 'git'
@@ -22,12 +23,16 @@ brew 'rbenv'
 cask 'java'
 brew 'python' # with Pip
 
+# PHP
+brew 'composer'
+
 # ミドルウェア
 brew 'mysql'
 
 # ツール
 #brew 'terraform'
 brew 'tfenv'
+brew 'minamijoyo/tfschema/tfschema'
 brew 'ansible'
 brew 'ansible-lint'
 brew 'packer'
