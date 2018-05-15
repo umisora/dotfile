@@ -41,6 +41,12 @@ AppStoreから手動でインストールする。
   * [Dash](https://kapeli.com/dash)  
   * [Jasper](https://jasperapp.io/)  
   * AppStore履歴から入れたほうがいいやつをInstall
+  * [LICEcap for OSX](Cockos Incorporated | LICEcap https://www.cockos.com/licecap/)
+  * [Boostnote \| Boost Happiness, Productivity, and Creativity\.](https://boostnote.io/)
+  * [Docker For Mac \| Docker](https://www.docker.com/docker-mac)
+  * [XMind](http://jp.xmind.net/)
+  * [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+  * [Slack MacApp](https://slack.com/intl/ja-jp/downloads/osx)
 
 1. iCloud Account Or Apple Accountの統合
    カレンダー / メール / リマインダー 連携
