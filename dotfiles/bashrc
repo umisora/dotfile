@@ -31,17 +31,17 @@ alias vi='vim'
 
 # Terraform
 alias tf='terraform'
-
 # bash-completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
      . `brew --prefix`/etc/bash_completion
 fi
+source <(kubectl completion zsh)
 
 # プロンプトの表示を変更
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\$ '
 
-export PATH="$HOME/.tfenv/bin:$HOME/.rbenv/bin:/usr/local/bin/:$PATH"
+export PATH="$HOME/.tfenv/bin:/usr/local/tflint/bin:$HOME/.rbenv/bin:/usr/local/bin/:$PATH"
 eval "$(rbenv init -)"
 eval "$(direnv hook bash)"
 export EDITOR=vim

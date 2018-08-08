@@ -31,6 +31,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-commentary'    " Range CommentOut V, Select, gc
   Plug 'scrooloose/syntastic' " SyntaxChecker 
   Plug 'ekalinin/Dockerfile.vim' " Docker & DockerCompose Syntax
+  Plug 'scrooloose/nerdtree'     " ファイルをtree表示してくれる :NERDTree
 call plug#end()
  
 
@@ -39,6 +40,7 @@ call plug#end()
 "--------------------
 "エンコーディング
 set encoding=utf-8
+set fileencoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 "改行コード自動判別
 set fileformats=unix,dos,mac
@@ -75,6 +77,9 @@ set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
 set grepprg=grep\ -nh
 " 検索結果のハイライトをEsc連打でクリアする
 nnoremap <ESC><ESC> :nohlsearch<CR>
+" NERDTreeをCtrl+nで開くことができます
+map <C-n> :NERDTreeToggle<CR>
+
 " Delete Keyを有効にする
 set nocompatible
 set whichwrap=b,s,h,l,<,>,[,]
@@ -91,6 +96,12 @@ autocmd BufRead,BufNewFile *.rb setlocal filetype=ruby tabstop=2 softtabstop=2 s
 autocmd BufRead,BufNewFile *.py setlocal filetype=python tabstop=4 softtabstop=4 shiftwidth=4
 autocmd BufRead,BufNewFile *.yaml setlocal filetype=ansible 
 autocmd BufRead,BufNewFile *.yml setlocal filetype=yaml
+
+"--------------------
+" visible WHITESPACE/TAB/LF
+"--------------------
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
 "--------------------
 " markdown
@@ -111,7 +122,9 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_signs=1
+"let g:syntastic_mode_map = {'mode': 'passive', 'active_filetypes': ['ruby'] }
 let g:syntastic_mode_map = {'mode': 'passive'}
+let g:syntastic_ruby_checkers = ['rubocop']
 
 "--------------------
 " Syntack Chekers

@@ -6,11 +6,12 @@
 	st = status
 	co = checkout
 	br = browse
-	pr = pull-request
+	prq = pull-request
 	tree = log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
         vimdiff = difftool
         rmbranches = "!f () { git branch --merged | egrep -v '\\*|develop|master|release' | xargs -n 1 git branch -d; };f"
         rmbrs = rmbranches
+        add-all = "!f () { git diff --name-only --diff-filter=M | xargs git add; };f"
 [user]
         name = umisora
         email = bit72s_akm@hotmail.com
@@ -24,3 +25,8 @@
         prompt = false
 [fetch]
 	prune = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
+	required = true

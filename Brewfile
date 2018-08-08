@@ -2,7 +2,9 @@
 tap 'caskroom/cask'
 
 # 必須ツール
+cask 'karabiner-elements'
 brew 'git'
+brew 'git-lfs'
 brew 'vim', args: ['with-lua', 'HEAD']
 brew 'bash-completion'
 brew 'direnv'
@@ -15,6 +17,7 @@ brew 'reattach-to-user-namespace'
 brew 'hub'
 brew 'wget'
 brew 'nmap'
+brew 'jid' #https://github.com/simeji/jid
 
 # 言語
 brew 'ruby-build'
@@ -28,6 +31,8 @@ brew 'mysql'
 # ツール
 #brew 'terraform'
 brew 'tfenv'
+brew 'terraform_landscape'
+brew 'minamijoyo/tfschema/tfschema'
 brew 'ansible'
 brew 'ansible-lint'
 brew 'packer'

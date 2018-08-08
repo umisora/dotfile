@@ -1,0 +1,49 @@
+# This file overrides https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+
+
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - '_repositories/**/*'
+    - 'vendor/**/*'
+    - 'factories/**/*'
+    - 'spec/dummy/**/*'
+    - '**/Rakefile'
+    - '**/config.ru'
+    - '**/*/schema.rb'
+    - '*.gemspec'
+  TargetRubyVersion: 2.3
+  DisabledByDefault: true
+Style/HashSyntax:
+  Enabled: true
+Style/EmptyLines:
+  Enabled: true
+Style/TrailingBlankLines:
+  Enabled: true
+Style/TrailingWhitespace:
+  Enabled: true
+Style/MethodDefParentheses:
+  Enabled: true
+Layout/BlockAlignment:
+  Enabled: true
+Layout/DefEndAlignment:
+  Enabled: true
+Layout/CaseIndentation:
+  Enabled: true
+Layout/EmptyLineBetweenDefs:
+  Enabled: true
+Naming/HeredocDelimiterNaming:
+  Enabled: true
+Naming/HeredocDelimiterCase:
+  Enabled: true
+Naming/MethodName:
+  Enabled: true
+Naming/PredicateName:
+  Enabled: true
+Naming/VariableName:
+  Enabled: true
+Naming/VariableNumber:
+  Enabled: true
