@@ -29,9 +29,6 @@ source /usr/local/etc/bash_completion.d/docker-compose.bash-completion
 # Vim
 alias vi='vim'
 
-# lazygit
-alias lg='lazygit'
-
 # Terraform
 alias tf='terraform'
 # bash-completion

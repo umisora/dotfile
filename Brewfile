@@ -25,10 +25,6 @@ brew 'ruby-build'
 brew 'rbenv'
 cask 'java'
 brew 'python' # with Pip
-brew 'go'
-
-# PHP
-brew 'composer'
 
 # ミドルウェア
 brew 'mysql'
