@@ -1,6 +1,5 @@
 # リポジトリ
 tap 'caskroom/cask'
-tap 'homebrew/php'
 
 # 必須ツール
 cask 'karabiner-elements'
