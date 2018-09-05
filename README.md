@@ -39,17 +39,17 @@ AppStoreから手動でインストールする。
     ・インストール後、再ログイン
     ・Mac>システム環境設定>キーボード
       入力ソース> デフォルのIMEを`-`で消す。
-  * [tunnelblickのインストール (VPN)](https://tunnelblick.net/downloads.html)
-  * [quiver](http://happenapps.com/#quiver)
-  * [Dash](https://kapeli.com/dash)  
+  * [tunnelblickのインストール (VPN)](https://tunnelblick.net/downloads.html) only remote machine
+  * ~[quiver](http://happenapps.com/#quiver)~
+  * ~[Dash](https://kapeli.com/dash)~  -> Brewfile
   * [Jasper](https://jasperapp.io/)  
   * AppStore履歴から入れたほうがいいやつをInstall
   * [LICEcap for OSX](Cockos Incorporated | LICEcap https://www.cockos.com/licecap/)
-  * [Boostnote \| Boost Happiness, Productivity, and Creativity\.](https://boostnote.io/)
+  * ~[Boostnote \| Boost Happiness, Productivity, and Creativity\.](https://boostnote.io/)~  -> Brewfile
   * [Docker For Mac \| Docker](https://www.docker.com/docker-mac)
   * [XMind](http://jp.xmind.net/)
-  * [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-  * [Slack MacApp](https://slack.com/intl/ja-jp/downloads/osx)
+  * ~[IntelliJ IDEA](https://www.jetbrains.com/idea/)~ -> VisualStudioCode with Brewfile
+  * ~[Slack MacApp](https://slack.com/intl/ja-jp/downloads/osx)~ -> MacAppStore
 
 1. iCloud Account Or Apple Accountの統合
    カレンダー / メール / リマインダー 連携
