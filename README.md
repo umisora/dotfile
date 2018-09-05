@@ -9,7 +9,7 @@ AppStoreから手動でインストールする。
 ・`cd ~/ && mkdir workspace && git clone git@github.com:umisora/dotfile.git --recursive`
 
 1. Mac Terminal Setting
-   Mac Terminal.app のカラー設定をThema ImportでSolarized にする
+   Mac Terminal.app のカラー設定をThema ImportでSolarized にする (dotfile/themas/solarized/Solarized Dark.terminal を読込)
 
 1. Docker For MacをInstallする
    [Docker For Mac](https://docs.docker.com/docker-for-mac/)
