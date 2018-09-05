@@ -14,9 +14,12 @@ AppStoreから手動でインストールする。
 1. Docker For MacをInstallする
    [Docker For Mac](https://docs.docker.com/docker-for-mac/)
 
+1. HomeBrewをInstallする/Brew Bundle
+・`installs/homebrew_install.sh`
+・`brew bundle` を実行する
+
 1. Setup Scripts
 ・setup.shを実行する
-・`brew bundle` を実行する
 
 1. Macの初期設定
 ・Mac>システム環境設定>キーボード
