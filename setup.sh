@@ -1,4 +1,4 @@
-#!/bin/sh
+
 basedir=$(cd $(dirname $0) && pwd)
 
 ###########################################################################################
@@ -24,17 +24,16 @@ mkdir -p  ~/.vim/colors/
 ln -fns ${basedir}/themas/vimcolor/solarized.vim ~/.vim/colors/
 
 echo setup bash_completion
-cd /usr/local/etc/bash_completion.d  
-ln -fns /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion  
-ln -fns /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion  
-ln -fns /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion
+ln -fns /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion /usr/local/etc/bash_completion.d/docker
+ln -fns /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion /usr/local/etc/bash_completion.d/docker-machine
+ln -fns /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion /usr/local/etc/bash_completion.d/docker-compofse
 cd -
 
 ###########################################################################################
 ## Install Modules
 ############################################################################################
 echo setup modules
-sh installs/homebrew_install.sh
+#sh installs/homebrew_install.sh
 sh installs/ruby_install.sh
 sh installs/digdag_install.sh
 
