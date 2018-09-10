@@ -17,6 +17,7 @@ AppStoreから手動でインストールする。
 1. HomeBrewをInstallする/Brew Bundle
 ・`installs/homebrew_install.sh`
 ・`brew bundle` を実行する
+・`brew autoupdate --start --upgrade --cleanup --enable-notification` を実行する
 
 1. Setup Scripts
 ・setup.shを実行する
