@@ -16,7 +16,7 @@ brew 'direnv'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
 cask 'visual-studio-code'
-cask 'xmind'
+cask 'freeplane'
 
 # PackageManager
 
