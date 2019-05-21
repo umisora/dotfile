@@ -19,6 +19,9 @@ AppStoreから手動でインストールする。
    ```
    をターミナルで実行しておく。
 
+1. Fontを追加する
+   App > Font Book.app > 筑紫xゴシックを追加する。
+
 1. Docker For MacをInstallする
    [Docker For Mac](https://docs.docker.com/docker-for-mac/)
 
