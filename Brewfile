@@ -10,6 +10,7 @@ cask 'google-japanese-ime'
 cask 'karabiner-elements'
 brew 'git'
 brew 'git-lfs'
+brew 'git-secrets'
 brew 'vim', args: ['with-lua', 'HEAD']
 brew 'bash-completion'
 brew 'direnv'
