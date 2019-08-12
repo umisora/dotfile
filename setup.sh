@@ -39,6 +39,10 @@ cd -
 ###########################################################################################
 ## Install Modules
 ############################################################################################
+echo enable autoupdate homebrew
+brew tap domt4/autoupdate
+brew autoupdate --start --upgrade --cleanup --enable-notification
+
 echo setup modules
 #sh installs/homebrew_install.sh
 sh installs/ruby_install.sh
