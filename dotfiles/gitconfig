@@ -2,8 +2,11 @@
 	template = /Users/murakami.katsutoshi/.commit_template
 [core]
 	editor = vim -c \"set fenc=utf-8\"
+	pager = LESSCHARSET=utf-8 less
+	quotepath = false
 [alias]
-	st = status
+        rem = remote -v
+        st = status
 	co = checkout
 	br = browse
 	prq = pull-request

@@ -16,9 +16,15 @@ ln -fns ${basedir}/dotfiles/gemrc ~/.gemrc
 ln -fns ${basedir}/dotfiles/bundle.config ~/.bundle/config
 ln -fns ${basedir}/configs/yamllint/ ~/.config/yamllint
 
+echo setup tmux configs
+ln -fns ${basedir}/util/tmux-pbcopy /usr/local/bin/tmux-pbcopy
+ln -fns ${basedir}/util/tmuxx /usr/local/bin/tmuxx
+chmod +x /usr/local/bin/tmux-pbcopy
+chmod +x /usr/local/bin/tmuxx
+
 echo setup vim
 ln -fns ${basedir}/vim ~/.vim
-ln -fns ${basedir}/themas/dircolors-solarized ~/.dircolors-solarized 
+ln -fns ${basedir}/themas/dircolors-solarized ~/.dircolors-solarized
 
 mkdir -p  ~/.vim/colors/
 ln -fns ${basedir}/themas/vimcolor/solarized.vim ~/.vim/colors/
@@ -27,17 +33,17 @@ echo setup bash_completion
 ln -fns /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion /usr/local/etc/bash_completion.d/docker
 ln -fns /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion /usr/local/etc/bash_completion.d/docker-machine
 ln -fns /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion /usr/local/etc/bash_completion.d/docker-compofse
-cd -
+
+cd ${basedir}
 
 ###########################################################################################
 ## Install Modules
 ############################################################################################
 echo setup modules
-#sh installs/homebrew_install.sh
+sh installs/homebrew_install.sh
 sh installs/ruby_install.sh
-sh installs/digdag_install.sh
-
-if [ ! `which gcloud` ]; then
-  echo Install gcloud command
-  curl https://sdk.cloud.google.com | bash
-fi
+#sh installs/digdag_install.sh
+#if [ ! `which gcloud` ]; then
+#  echo Install gcloud command
+#  curl https://sdk.cloud.google.com | bash
+#fi
