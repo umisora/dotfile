@@ -18,6 +18,9 @@ brew 'tmux'
 brew 'reattach-to-user-namespace'
 cask 'visual-studio-code'
 cask 'freeplane'
+cask 'licecap'
+cask 'maczip4win'
+brew 'tree'
 
 # PackageManager
 
@@ -26,6 +29,7 @@ brew 'hub'
 brew 'wget'
 brew 'nmap'
 brew 'jid' #https://github.com/simeji/jid
+brew 'mkcert' # localhost certification
 
 # 言語
 brew 'readline'
@@ -34,13 +38,14 @@ cask 'java'
 brew 'python' # with Pip
 
 # ミドルウェア
-brew 'mysql', restart_service: true
+brew 'mysql', restart_service: false, start_service: false
 
 # ツール
 #brew 'terraform'
 brew 'tfenv'
 brew 'terraform_landscape'
-#brew 'minamijoyo/tfschema/tfschema'
+brew 'minamijoyo/tfschema/tfschema'
+brew 'terraform-docs'
 brew 'ansible'
 brew 'ansible-lint'
 brew 'packer'
@@ -54,3 +59,6 @@ cask 'boostnote'
 # Lint
 brew 'jsonlint'
 brew 'watch'
+
+# template engine
+brew 'jsonnet'
