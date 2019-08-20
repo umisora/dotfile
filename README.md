@@ -11,6 +11,17 @@ AppStoreから手動でインストールする。
 1. Mac Terminal Setting
    Mac Terminal.app のカラー設定をThema ImportでSolarized にする (dotfile/themas/solarized/Solarized Dark.terminal を読込)
 
+1. Finder/Keyboard
+   ```
+   defaults write com.apple.finder AppleShowAllFiles TRUE
+   defaults write -g InitialKeyRepeat -int 10
+   defaults write -g KeyRepeat -int 1
+   ```
+   をターミナルで実行しておく。
+
+1. Fontを追加する
+   App > Font Book.app > 筑紫xゴシックを追加する。
+
 1. Docker For MacをInstallする
    [Docker For Mac](https://docs.docker.com/docker-for-mac/)
 

@@ -27,6 +27,10 @@ alias vi='vim'
 
 # Terraform
 alias tf='terraform'
+
+# Heroku
+alias hrk='heroku'
+
 # bash-completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
      . `brew --prefix`/etc/bash_completion

@@ -2,6 +2,13 @@
 basedir=$(cd $(dirname $0) && pwd)
 
 ###########################################################################################
+## Setup git secret
+############################################################################################
+git secrets --register-aws --global
+git secrets --install ~/.git-templates/git-secrets
+git config --global init.templateDir ~/.git-templates/git-secrets
+
+###########################################################################################
 ## Setup Dotfiles
 ############################################################################################
 echo setup dotfikes
@@ -39,6 +46,10 @@ cd ${basedir}
 ###########################################################################################
 ## Install Modules
 ############################################################################################
+echo enable autoupdate homebrew
+brew tap domt4/autoupdate
+brew autoupdate --start --upgrade --cleanup --enable-notification
+
 echo setup modules
 sh installs/homebrew_install.sh
 sh installs/ruby_install.sh
