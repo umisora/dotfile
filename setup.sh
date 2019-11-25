@@ -53,6 +53,7 @@ brew autoupdate --start --upgrade --cleanup --enable-notification
 echo setup modules
 sh installs/homebrew_install.sh
 sh installs/ruby_install.sh
+sh installs/python_install.sh
 #sh installs/digdag_install.sh
 #if [ ! `which gcloud` ]; then
 #  echo Install gcloud command

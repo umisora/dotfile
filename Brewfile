@@ -35,7 +35,8 @@ brew 'mkcert' # localhost certification
 brew 'readline'
 brew 'rbenv'
 cask 'java'
-brew 'python' # with Pip
+brew 'pyenv' # with Pip
+brew 'pipenv'
 
 # ミドルウェア
 brew 'mysql', restart_service: false, start_service: false
@@ -55,6 +56,7 @@ brew 'heroku-toolbelt'
 brew 'coreutils'
 cask 'dash'
 cask 'boostnote'
+brew 'toshimaru/nyan/nyan'
 
 # Lint
 brew 'jsonlint'

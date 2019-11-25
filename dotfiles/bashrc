@@ -42,10 +42,23 @@ GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\$ '
 
 export PATH="$HOME/.tfenv/bin:/usr/local/tflint/bin:$HOME/.rbenv/bin:/usr/local/bin/:$PATH"
+# rbenv
 eval "$(rbenv init -)"
+# direnv
 eval "$(direnv hook bash)"
-export EDITOR=vim
+# goenv
+export GOPATH=$HOME/go
+export GOENV_ROOT=$HOME/.goenv
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH=$PATH:$GOPATH/bin
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export EDITOR=vim
 complete -C /usr/local/Cellar/tfenv/0.5.2/versions/0.10.7/terraform terraform
 
 
