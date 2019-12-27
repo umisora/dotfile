@@ -61,6 +61,8 @@ eval "$(pyenv init -)"
 export EDITOR=vim
 complete -C /usr/local/Cellar/tfenv/0.5.2/versions/0.10.7/terraform terraform
 
+# 便利コマンド
+alias myip='curl inet-ip.info'
 
 Open tmux Default
 if [ -z "$TMUX" -a -z "$STY" ]; then
