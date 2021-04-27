@@ -11,21 +11,20 @@ cask 'karabiner-elements'
 brew 'git'
 brew 'git-lfs'
 brew 'git-secrets'
-brew 'vim', args: ['with-lua', 'HEAD']
+#brew 'vim', args: ['with-lua', 'HEAD']
 brew 'bash-completion'
 brew 'direnv'
 brew 'tmux'
 brew 'reattach-to-user-namespace'
-cask 'visual-studio-code'
-cask 'freeplane'
-cask 'licecap'
+#cask 'visual-studio-code'
+#cask 'freeplane'
+#cask 'licecap'
 cask 'maczip4win'
 brew 'tree'
 
-# PackageManager
-
 # 便利コマンド
 brew 'hub'
+brew 'github/gh/gh'
 brew 'wget'
 brew 'nmap'
 brew 'jid' #https://github.com/simeji/jid
@@ -34,7 +33,10 @@ brew 'mkcert' # localhost certification
 # 言語
 brew 'readline'
 brew 'rbenv'
-cask 'java'
+brew 'goenv'
+brew 'pyenv'
+brew 'nvm'
+#cask 'java'
 brew 'python' # with Pip
 
 # ミドルウェア
@@ -46,15 +48,15 @@ brew 'tfenv'
 brew 'terraform_landscape'
 brew 'minamijoyo/tfschema/tfschema'
 brew 'terraform-docs'
-brew 'ansible'
-brew 'ansible-lint'
+#brew 'ansible'
+#brew 'ansible-lint'
 brew 'packer'
 brew 'jq'
 brew 'awscli'
-brew 'heroku-toolbelt'
+#brew 'heroku-toolbelt'
 brew 'coreutils'
-cask 'dash'
-cask 'boostnote'
+#cask 'dash'
+#cask 'boostnote'
 
 # Lint
 brew 'jsonlint'

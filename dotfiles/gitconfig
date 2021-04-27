@@ -4,6 +4,7 @@
 	editor = vim -c \"set fenc=utf-8\"
 	pager = LESSCHARSET=utf-8 less
 	quotepath = false
+	excludesfile = /Users/murakami.katsutoshi/.gitignore_global
 [alias]
         rem = remote -v
         st = status
@@ -12,7 +13,7 @@
 	prq = pull-request
 	tree = log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
         vimdiff = difftool
-        rmbranches = "!f () { git branch --merged | egrep -v '\\*|develop|master|release' | xargs -n 1 git branch -d; };f"
+        rmbranches = "!f () { git branch --merged | egrep -v '\\*|develop|master|release|main' | xargs -n 1 git branch -d; };f"
         rmbrs = rmbranches
         add-all = "!f () { git diff --name-only --diff-filter=M | xargs git add; };f"
 [user]
@@ -41,5 +42,8 @@
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 	patterns = private_key
 	patterns = private_key_id
+	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
 [init]
-	templatedir = ~/.git-templates/secrets
+	templateDir = /Users/murakami.katsutoshi/.git-templates/git-secrets
+[pull]
+	prune = true
