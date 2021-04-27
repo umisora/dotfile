@@ -42,7 +42,9 @@ GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\$ '
 
 export PATH="$HOME/.tfenv/bin:/usr/local/tflint/bin:$HOME/.rbenv/bin:/usr/local/bin/:$PATH"
+# rbenv
 eval "$(rbenv init -)"
+# direnv
 eval "$(direnv hook bash)"
 
 # goenv
@@ -67,8 +69,11 @@ export EDITOR=vim
 
 # tfenv
 complete -C /usr/local/Cellar/tfenv/0.5.2/versions/0.10.7/terraform terraform
-
 eval "$(gh completion -s bash)"
+
+
+# 便利コマンド
+alias myip='curl inet-ip.info'
 
 echo "Open tmux Default"
 if [ -z "$TMUX" -a -z "$STY" ]; then

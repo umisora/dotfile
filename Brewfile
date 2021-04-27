@@ -33,11 +33,17 @@ brew 'mkcert' # localhost certification
 # 言語
 brew 'readline'
 brew 'rbenv'
+<<<<<<< HEAD
 brew 'goenv'
 brew 'pyenv'
 brew 'nvm'
 #cask 'java'
 brew 'python' # with Pip
+=======
+cask 'java'
+brew 'pyenv' # with Pip
+brew 'pipenv'
+>>>>>>> 380fcacedd1095727b2cc926bcb5a708046fb161
 
 # ミドルウェア
 brew 'mysql', restart_service: false, start_service: false
@@ -57,6 +63,7 @@ brew 'awscli'
 brew 'coreutils'
 #cask 'dash'
 #cask 'boostnote'
+brew 'toshimaru/nyan/nyan'
 
 # Lint
 brew 'jsonlint'
